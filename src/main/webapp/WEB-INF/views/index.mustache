@@ -1,0 +1,19 @@
+{{> partials/header}}
+  <h1>Liste des categories</h1>
+  <div class="row">
+    <div class="col">
+      <div class="categories">
+        {{#categories}}
+          <div class="category" style="display: inline-block">
+            <div class="card my-3">
+              <img src="https://picsum.photos/200/200" class="card-img-top" alt="{{ name }}">
+              <div class="card-body" style="min-width: 200px;">
+                <h5 class="card-title"><a href="http://localhost:8080/categories/{{ id }}">{{ name }}</a></h5>
+              </div>
+            </div>
+          </div>
+        {{/categories}}
+      </div>
+    </div>
+  </div>
+{{> partials/footer}}
